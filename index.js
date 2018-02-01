@@ -9,7 +9,7 @@ var takeANumber = (katzDeliLine, name) => {
 
 var nowServing = (katzDeliLine) => {
   var nextUp = katzDeliLine[0]
-  if (katzDeliLine[0] == null) {
+  if (katzDeliLine[0] === undefined) {
     return "There is nobody waiting to be served!"
   }
   else {
@@ -21,7 +21,7 @@ var nowServing = (katzDeliLine) => {
 var currentLine = (katzDeliLine) => {
   var line = katzDeliLine.length
   var lineString = "The line is currently: "
-  if (katzDeliLine[0] == null) {
+  if (katzDeliLine[0] === undefined) {
     return "The line is currently empty."
   }
   else {
